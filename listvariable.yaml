@@ -1,0 +1,17 @@
+---
+- hosts: all
+  vars:
+    games:
+      - cricket
+      - football
+      - baseball
+      - trackevents
+    games_list: [cricket, football, baseball, trackevents]
+  tasks:
+  - name: print list varaiable
+    debug:
+      msg: "{{ games [0] }}"
+  - name: print list varaiables
+    debug:
+      msg: "{{ games [1] }}"
+

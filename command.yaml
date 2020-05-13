@@ -1,0 +1,6 @@
+---
+- hosts: 35.163.184.203
+  become: yes
+  tasks:
+  - name: diable selinux
+    command: "setenforce 0"
