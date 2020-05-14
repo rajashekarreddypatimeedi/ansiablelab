@@ -1,1 +1,5 @@
-
+---
+- hosts: centos
+  become: yes
+  roles:
+  - apache
